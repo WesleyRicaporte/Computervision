@@ -50,7 +50,7 @@ def calc_stats(img: np.ndarray) -> np.ndarray:
 
 
 def shift_image(img: np.ndarray, shift_val: int) -> np.ndarray:
-    height, width = img.shape
+    height, width = img.shape #lol
     shift = int(shift_val)
     padded_img = cv2.copyMakeBorder(img, 0, 0, shift, 0, cv2.BORDER_CONSTANT, value=0)
     padded_img = padded_img[:, :width]
